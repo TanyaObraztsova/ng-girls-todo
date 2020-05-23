@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./input-button-unit.component.scss']
 })
 export class InputButtonUnitComponent implements OnInit {
-  @Input() title = 'initial title';
+  @Input() title = 'new item';
   @Output() submit: EventEmitter<string> = new EventEmitter();
 
   constructor() {}
