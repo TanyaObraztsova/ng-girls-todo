@@ -1,8 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-
-export interface Item {
-  title?: string
-}
+import { TodoItem } from '../interfaces/todo-item';
 
 @Component({
   selector: 'app-todo-item',
@@ -10,7 +7,7 @@ export interface Item {
   styleUrls: ['./todo-item.component.scss']
 })
 export class TodoItemComponent implements OnInit {
-  @Input() item: Item = {};
+  @Input() item: TodoItem = {};
 
   constructor() {}
 
